@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Search App</title>
+    <link rel="stylesheet" href="search.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+        * {
+            font-family: 'Montserrat Alternates', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pokémon Search App</h1>
+    <main>
+        <label for="search-input">Search for Pokémon Name or ID:</label>
+        <input type="text" id="search-input" required>
+        <button id="search-button">Search</button>
+        <section id="output">
+            <div id="name-and-id">
+                <span id="pokemon-name"></span>
+                <span id="pokemon-id"></span>
+            </div>
+            <div id="weight-and-height">
+                <span id="weight"></span>
+                <span id="height"></span>
+            </div>
+            <div id="img-container">
+            </div>
+            <div id="types">
+            </div>
+        </section>
+        <section id="stats">
+            <h3>Base</h3>
+            <h3>Stats</h3>
+            <p>HP:</p>
+            <p class="base-stats" id="hp"></p>
+            <p>Attack:</p>
+            <p class="base-stats" id="attack"></p>
+            <p>Defense:</p>
+            <p class="base-stats" id="defense"></p>
+            <p>Sp. Attack:</p>
+            <p class="base-stats" id="special-attack"></p>
+            <p>Sp. Defense:</p>
+            <p class="base-stats" id="special-defense"></p>
+            <p>Speed:</p>
+            <p class="base-stats" id="speed"></p>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
